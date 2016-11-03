@@ -16,7 +16,9 @@ describe('Bubble Sort', function(){
   });
 
   it('handles an array of multiple elements with multiple unsorted elements', function(){
-    expect( bubbleSort([2, 1, 5, 4, 7, 6])).toEqual([1, 2, 4, 5, 6, 7]);
+    var array = [2, 1, 5, 4, 7, 6];
+    bubbleSort(array)
+    expect(array).toEqual([1,2,4,5,6,7])
   });
 
 });
